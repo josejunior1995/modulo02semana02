@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Calculadora de IMC</title>
+   
+  </head>
+  <body>
+    <p>Coloque os seus dados na calculadora e calcule o seu IMC:</p>
+    <div class="field-name">
+      <label>Nome</label>
+      <input type="text" name="name" text="Nome" placeholder="Ex: João Silva" maxlength="200" id="name">
+    </div>
+    <div class="field-age">
+      <label>Idade</label>
+      <input type="number" name="age" text="Idade" placeholder="Ex: 35" maxlength="200" id="age"  min="0" max="119">
+      <span class="caption">anos</span>
+    </div>
+    <div class="field-height">
+      <label>Altura</label>
+      <input type="number" name="height" text="Altura" placeholder="Ex: 165" maxlength="200" id="height" min="0" max="225">
+      <span class="caption">cm</span>
+    </div>
+    <div class="field-weight">
+      <label>Peso</label>
+      <input type="number" name="weight" text="Peso" placeholder="Ex: 62,5" maxlength="200" id="weight"  min="0" max="300">
+      <span class="caption">kg</span>
+    </div>
+    <div class="field-city">
+      <label>Cidade</label>
+      <input type="text" name="city" text="Cidade" placeholder="Ex: São Paulo" maxlength="200" id="city">
+    </div>
+    <div>
+      <input type="button" id="submit" name="calculate" value="Calcular">
+    </div>
+    <div id="result"></div>
+    <script src="EX04.js"></script>
+  </body>
+</html>
